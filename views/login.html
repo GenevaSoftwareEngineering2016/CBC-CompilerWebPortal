@@ -1,0 +1,37 @@
+<div align="center">
+    <div class="LoginContent">
+        <div align="left">
+            <div ng-controller="loginCtrl">
+                <h3>Login</h3>
+                <hr >
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="Message" id="MsgContainer" ng-show="MsgContainer.show"> 
+                            <div style="float: right;"><i ng-click="hideMessage()" class="fa fa-times-circle btnClose" aria-hidden="true"></i></div><label>{{ message }}</label>
+                        </div>
+                    </div>
+                </div>
+                <form action="/" id="myLogin">
+                    
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <label>Username:</label>
+                            <input class="txtInput" type="text" id="username" ng-model="username">
+                        </div>
+                    </div>                    
+                    <br />
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <label>Password: </label>
+                            <input class="txtInput" type="password" id="password" ng-model="password">
+                        </div>
+                    </div>
+                    <br />
+                    <div align="right">
+                    <button type="button" ng-click="signup()" class="btn btn-md btn-primary">Sign-up</button> <button type="button" class="btn btn-md btn-success" ng-click="login()">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div> 

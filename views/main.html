@@ -1,0 +1,15 @@
+<div align="center">
+    <h2>Welcome to the home page!</h2>
+</div>
+<hr />
+<div style="margin: 10px;" ng-controller="recordsCtrl" >  
+    <div class="row" ng-repeat="rows in chunkedData">
+      <div class="col-sm-3" ng-repeat="item in rows">
+          
+          <div class="row birdrow" ng-click="AlertBird(this)" >
+            <div class="col-sm-10"><label class="lblBird">{{item.name}}</label></div>
+            <div class="col-sm-2"><label>{{item.count}}</label></div>
+          </div>
+      </div>
+    </div>
+</div>

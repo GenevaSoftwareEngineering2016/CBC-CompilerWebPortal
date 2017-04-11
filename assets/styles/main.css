@@ -1,0 +1,113 @@
+.headerMenu 
+{
+	background-color: #3B5998; 
+	height: auto; 
+	min-height: 70px; 
+	box-shadow: 0px 2px 5px #888888;
+	-webkit-box-shadow: 0px 2px 5px #888888;
+	-moz-box-shadow: 0px 2px 5px #888888;
+	top: 0px;
+	width: 100%;
+	z-index: 50;
+}
+
+.iconLink
+{
+	outline: none; 
+	float: left; 
+	padding-top: 20px; 
+	padding-right: 15px; 
+	padding-left: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.body 
+{
+	background-color: #F5F8FA;
+	//background-color: darkgrey;
+	//background-color: #f8f8f8;
+	margin: 0px;
+	font-family: Nunito;
+}
+
+.LoginContent
+{
+    width: 40%;
+	margin: 15px;
+	background-color: #fff;
+	border-radius: 5px;
+	//box-shadow: 2px 2px 5px #888888;
+	//-webkit-box-shadow: 2px 2px 5px #888888;
+	//-moz-box-shadow: 2px 2px 5px #888888;
+	box-shadow: 2px 2px 5px #888888, -2px 2px 5px #888888;
+	padding: 20px;
+}
+
+.Message 
+{
+    width: 100%;
+    border-radius: 5px;
+    //box-shadow: 2px 2px 5px #888888;
+	//-webkit-box-shadow: 2px 2px 5px #888888;
+	//-moz-box-shadow: 2px 2px 5px #888888;
+	box-shadow: 2px 2px 5px #888888, -2px 2px 5px #888888;
+    background-color: salmon;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.btnLogout
+{
+    padding: 5px;
+    cursor: pointer;
+}
+
+.btnLogout:hover
+{
+    color: #337ab7;
+}
+
+.btnClose
+{ 
+    cursor: pointer;
+    padding: 3px;
+}
+
+.logoutContainer
+{
+    float: right;
+    color: #fff;
+    font-weight: bold;
+}
+
+.txtInput 
+{
+    width: 100%;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.lblBird 
+{
+    padding: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.birdrow:hover
+{
+    background-color: #e1e1e1;
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .LoginContent 
+    {
+        width: 85%;
+    }
+}
