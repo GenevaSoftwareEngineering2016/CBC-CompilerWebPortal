@@ -83,6 +83,7 @@ birdCompilerApp.controller('loginCtrl', function($scope, $location, $rootScope, 
     //                    ];
     
     $scope.login = function() {
+		$https({url: "https://genevabirdingweb.azurewebsites.net/.auth/login/google"})
         
         //for(var i=0; i<$scope.loginNames.length; i++)
         //{
@@ -92,7 +93,7 @@ birdCompilerApp.controller('loginCtrl', function($scope, $location, $rootScope, 
         //    }
         //}
         
-        var data = {
+       /* var data = {
             'username': $scope.username,
             'password': $scope.password
         };

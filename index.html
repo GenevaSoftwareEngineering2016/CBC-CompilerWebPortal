@@ -12,10 +12,13 @@
         <div class="headerMenu" >
             <div class="iconLink" title="Home" ng-click="home()" ng-controller="iconController">
                 <img src="assets/images/whiteBird.png" width="45" alt="Bird Icon" />
+				
             </div>
+			<div class="logoutContainer" ng-controller="loginCtrl" ng-show="loginContainer.show"><label class="btnLogin" ng-click="login ()">Login</label>|</>
             <div class="logoutContainer" ng-controller="logoutController" ng-show="logoutContainer.show">
+			
                 <label>{{ name }}</label> |<label class="btnLogout" ng-click="logout()"> Logout</label>
-            </div>
+</div>
         </div>
         <div ng-view></div>           
     </body>
